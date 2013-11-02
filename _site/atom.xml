@@ -4,7 +4,7 @@
  <title>Make A Difference</title>
  <link href="http://tech.tjs.im/" rel="self"/>
  <link href="http://tech.tjs.im"/>
- <updated>2013-11-02T21:23:54+08:00</updated>
+ <updated>2013-11-02T22:47:07+08:00</updated>
  <id>http://tech.tjs.im</id>
  <author>
    <name>Stephen</name>
@@ -171,6 +171,92 @@ end&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;有了这些基础知识就可以开始你的第一篇文章了。当你准备更深入的了解还可以做什么的
 时候，你可能会对如何&lt;a href=&quot;../permalinks/&quot;&gt;定制文章的永久链接&lt;/a&gt; 或在文章和站点的其它位
 置中使用&lt;a href=&quot;../variables/&quot;&gt;定制变量&lt;/a&gt;感兴趣。&lt;/p&gt;
+
+&lt;p&gt;原文：&lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot; target=&quot;_blank&quot;&gt;http://jekyllrb.com/docs/posts/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>［译文］ 如何创建 Jekyll 静态页面</title>
+   <link href="http://tech.tjs.im/2013-11-01/jekyll-pages.html"/>
+   <updated>2013-11-01T00:00:00+08:00</updated>
+   <id>http://tech.tjs.im/2013-11-01/jekyll-pages</id>
+   <content type="html">&lt;p&gt;作为&lt;a href=&quot;../posts/&quot;&gt;写文章&lt;/a&gt;的补充，Jekyll 还可以创建静态页面。
+利用 Jekyll 带来的便利，你只需要复制文件或文件夹，就是这么简单。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+
+&lt;h2&gt;主页&lt;/h2&gt;
+
+&lt;p&gt;像任何网站的配置一样，需要按约定在站点的要目录下找到 &lt;code&gt;index.html&lt;/code&gt; 文件，
+这个文件将被做为主页显示出来。除非你的站点设置了其它的文件作为默认文件，
+这个文件就将是你的 Jekyll 生成站点的主页。&lt;/p&gt;
+
+&lt;div class=&quot;note&quot;&gt;
+  &lt;h5&gt;提示™: 在主页上使用布局&lt;/h5&gt;
+  &lt;p&gt;
+    站点上任何 HTML 文件，包括主页，都可以使用布局和 include 中的内容一般共用的内容，如页面的 header 和 footer. 将合适的部分抽出放到布局中。
+  &lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2&gt;其它的页面的位置&lt;/h2&gt;
+
+&lt;p&gt;将 HTML 文件放在哪里取决于你想让它们如何工作。有两种方式可以创建页面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;命名 HTML 文件：将命名好的为页面准备的 HTML 文件放在站点的根目录下。&lt;/li&gt;
+&lt;li&gt;命名文件夹：在站点的根目录下为每一个页面创建一个文件夹，并把 index.html 文件放在每
+个文件夹里。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;这两种方法都可以工作（并且可以混合使用），它们唯一的区别就是访问的 URL 样式不同。&lt;/p&gt;
+
+&lt;h3&gt;命名 HTML 文件&lt;/h3&gt;
+
+&lt;p&gt;增加一个新页面的最简单方法就是把给 HTML 文件起一个适当的名字并放在根目录下。
+一般来说，一个站点下通常会有：主页 (homepage), 关于 (about), 和一个联系 (contact)
+页。根目录下的文件结构和对应生成的 URL 会是下面的样子：&lt;/p&gt;
+
+&lt;p&gt;  &lt;div&gt;
+    &lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;.
+|-- &lt;em&gt;config.yml
+|-- &lt;/em&gt;includes/
+|-- &lt;em&gt;layouts/
+|-- &lt;/em&gt;posts/
+|-- _site/
+|-- about.html    # =&amp;gt; http://yoursite.com/about.html
+|-- index.html    # =&amp;gt; http://yoursite.com/
+└── contact.html  # =&amp;gt; http://yoursite.com/contact.html&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;h3&gt;命名一个文件夹并包含一个 index.html 文件&lt;/h3&gt;
+
+&lt;p&gt;上面的方法可以很好的工作，但是有些人不喜欢在 URL 中显示文件的扩展名。用 Jekyll 达
+到这种效果，你只需要为每个顶级页面创建一个文件夹，并包含一个 &lt;code&gt;inex.html&lt;/code&gt; 文件。
+这样，每个 URL 就将以文件夹的名字作为结尾，网站服务器会将对应的 index.html
+展示给用户。下面是一个示例来展示这种结构的样子：&lt;/p&gt;
+
+&lt;p&gt;  &lt;div&gt;
+    &lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;.
+├── &lt;em&gt;config.yml
+├── &lt;/em&gt;includes/
+├── &lt;em&gt;layouts/
+├── &lt;/em&gt;posts/
+├── _site/
+├── about/
+|   └── index.html  # =&amp;gt; http://yoursite.com/about/
+├── contact/
+|   └── index.html  # =&amp;gt; http://yoursite.com/contact/
+└── index.html      # =&amp;gt; http://yoursite.com/&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;这种方式可能不适合每个人，对那些喜欢干净 URL 的人这是一种简单有效的方法。
+最终选择哪种方法完全由你来决定！&lt;/p&gt;
+
+&lt;p&gt;原文：&lt;a href=&quot;http://jekyllrb.com/docs/pages/&quot; target=&quot;_blank&quot;&gt;http://jekyllrb.com/docs/pages/&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

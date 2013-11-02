@@ -156,3 +156,5 @@ end
 有了这些基础知识就可以开始你的第一篇文章了。当你准备更深入的了解还可以做什么的
 时候，你可能会对如何[定制文章的永久链接](../permalinks/) 或在文章和站点的其它位
 置中使用[定制变量](../variables/)感兴趣。
+
+原文：<a href="http://jekyllrb.com/docs/posts/" target="_blank">http://jekyllrb.com/docs/posts/</a>

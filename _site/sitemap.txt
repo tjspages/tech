@@ -9,3 +9,4 @@ http://tech.tjs.im/sitemap.txt
 http://tech.tjs.im/rss.xml
 
 http://tech.tjs.im/2013-11-01/jekyll-posts.html
+http://tech.tjs.im/2013-11-01/jekyll-pages.html
