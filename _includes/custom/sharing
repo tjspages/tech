@@ -1,15 +1,18 @@
-<!-- JiaThis Button BEGIN -->
-<div class="jiathis_style_24x24">
-<a class="jiathis_button_qzone"></a>
-<a class="jiathis_button_tsina"></a>
-<a class="jiathis_button_tqq"></a>
-<a class="jiathis_button_weixin"></a>
-<a class="jiathis_button_renren"></a>
-<a href="http://www.jiathis.com/share?uid=902227" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-<a class="jiathis_counter_style"></a>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_linkedin"></a>
+<a class="bds_tsina"></a>
+<a class="bds_qzone"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<a class="bds_mshare"></a>
+<span class="bds_more">更多</span>
+<a class="shareCount"></a>
 </div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3211402" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
 <script type="text/javascript">
-var jiathis_config = {data_track_clickback:'true'};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 </script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=902227" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+<!-- Baidu Button END -->
