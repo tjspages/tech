@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Make A Difference</title>
+ <link href="http://tech.tjs.im/" rel="self"/>
+ <link href="http://tech.tjs.im"/>
+ <updated>2013-11-02T20:09:17+08:00</updated>
+ <id>http://tech.tjs.im</id>
+ <author>
+   <name>Stephen</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>test</title>
+   <link href="http://tech.tjs.im/2013-11-01/test.html"/>
+   <updated>2013-11-01T00:00:00+08:00</updated>
+   <id>http://tech.tjs.im/2013-11-01/test</id>
+   <content type="html">&lt;p&gt;test&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

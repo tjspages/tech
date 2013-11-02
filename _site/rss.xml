@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Make A Difference</title>
+        <description>Make A Difference - Stephen</description>
+        <link>http://tech.tjs.im</link>
+        <link>http://tech.tjs.im</link>
+        <lastBuildDate>2013-11-02T20:09:17+08:00</lastBuildDate>
+        <pubDate>2013-11-02T20:09:17+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>test</title>
+                <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+                <link>http://tech.tjs.im/2013-11-01/test.html</link>
+                <guid>http://tech.tjs.im/2013-11-01/test</guid>
+                <pubDate>2013-11-01T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
