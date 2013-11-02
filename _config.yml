@@ -85,13 +85,13 @@ JB :
     disqus :
       short_name : makeadifferencetech
     livefyre :
-      site_id : 123
+      site_id : 
     intensedebate :
-      account : 123abc
+      account : 
     facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
+      appid : 
+      num_posts: 
+      width: 
       colorscheme: light
     weibo :
       appkey : 
@@ -104,11 +104,11 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-1268034-7'
+        tracking_id : 'UA-8816834-6'
     getclicky :
       site_id : 
     mixpanel :
-        token : '_MIXPANEL_TOKEN_'
+        token : ''
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
