@@ -12,6 +12,7 @@ tags:
 [^monte]: [http://mathfaculty.fullerton.edu/mathews//n2003/montecarlopimod.html](http://mathfaculty.fullerton.edu/mathews//n2003/montecarlopimod.html)
 
 如果随意的在正方形中投点，坐标为 $x, y$, 则这些点有些会落于四分之一圆内，假设所投射的点有 m 点，在圆内的点有 n 点，则 $\frac{n}{m}\times4=\pi$，如果 $x, y$满足 $x^2 + y^2 \leq 1$ 则该点落在了圆内。
+<!--more-->
 
 代码[^code]：
 
