@@ -74,7 +74,6 @@ int main(int argc, char *argv[])
     time_t start, end;
     int R = atoi(argv[1]);
     unsigned long R2 = R * R;
-    //printf("%lu", R2);return 0;
     time(&start);
     unsigned long x, y;
     unsigned long total = 0, miss = 0;
@@ -89,13 +88,11 @@ int main(int argc, char *argv[])
         for(y = 0; y < R; y++){
             total++;
             if(x2 + y2[(int)y] > R2){
-                //printf("%lu\t%lu\t%lu\n",y, y2[y], R2);
                 miss++;
             }
         }
     }
     time(&end);
-    printf("%lu\t%lu\n", total, miss);
     printf("R = %d\tPI = %f\ttime consume:%f\n", R, (double)4 * (total - miss) / total, difftime(end, start));
     return 0;
 }
