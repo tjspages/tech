@@ -3,7 +3,7 @@ title: 蒙地卡罗法求 PI
 author: Stephen
 layout: post
 tags:
-    - puzzle
+- puzzle
 ---
 假设有一个圆半径为1，那么四分之一圆面积就为 $\frac{\pi}{4}$，而包括此四分之一圆的正方形面积就为1，如下图[^monte]：
 
@@ -73,21 +73,30 @@ int main(int argc, char *argv[])
 {
     time_t start, end;
     int R = atoi(argv[1]);
-    int i, sum = 0;
+    unsigned long R2 = R * R;
+    //printf("%lu", R2);return 0;
     time(&start);
-    double x, y;
-    double total = 0, hit = 0;
-    for (x = 1; x < R; x++)
+    unsigned long x, y;
+    unsigned long total = 0, miss = 0;
+    unsigned long y2[R];
+    unsigned long x2;
+    for(y = 0; y < R; y++){
+        y2[(int)y] = y * y;
+    }
+    for (x = 0; x < R; x++)
     {
-        for(y = 1; y < R; y++){
+        x2 = x * x;
+        for(y = 0; y < R; y++){
             total++;
-            if(x * x + y * y <= R * R){
-                hit++;
+            if(x2 + y2[(int)y] > R2){
+                //printf("%lu\t%lu\t%lu\n",y, y2[y], R2);
+                miss++;
             }
         }
     }
     time(&end);
-    printf("R = %d\tPI = %f\ttime consume:%f\n", R, (double)4 * hit / total, difftime(end, start));
+    printf("%lu\t%lu\n", total, miss);
+    printf("R = %d\tPI = %f\ttime consume:%f\n", R, (double)4 * (total - miss) / total, difftime(end, start));
     return 0;
 }
 {% endhighlight %}
