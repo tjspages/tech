@@ -12,7 +12,7 @@ tagline: 个人技术笔记
         <h2><a class="title" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
         <div class="post_at_index">
             {{summary}} 
-        {% if summary != post.content %}<a href="{{ BASE_PATH }}{{ post.url }}" rel="nofollow">Read more...</a>{% endif %}
+        {% if summary != post.content %}<div><a href="{{ BASE_PATH }}{{ post.url }}" rel="nofollow">Read more...</a></div>{% endif %}
         </div>
         <br/>
         <div>
