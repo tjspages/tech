@@ -1,13 +1,19 @@
 ---
-title: 蒙地卡罗法求 PI
+title: 蒙地卡罗方法求 PI
 author: Stephen
 layout: post
 tags:
 - puzzle
 ---
-假设有一个圆半径为1，那么四分之一圆面积就为 $\frac{\pi}{4}$，而包括此四分之一圆的正方形面积就为1，如下图[^monte]：
+## 蒙特卡罗方法
+蒙特卡罗方法（Monte Carlo method），也称统计模拟方法，是二十世纪四十年代中期由于科学技术的发展和电子计算机的发明，而被提出的一种以概率统计理论为指导的一类非常重要的数值计算方法。是指使用随机数（或更常见的伪随机数）来解决很多计算问题的方法[^wiki]。
 
-![](http://mathfaculty.fullerton.edu/mathews//n2003/montecarlopi/MonteCarloPiMod/Images/MonteCarloPiMod_gr_25.gif)
+[^wiki]: [http://zh.wikipedia.org/zh-cn/%E8%92%99%E5%9C%B0%E5%8D%A1%E7%BE%85%E6%96%B9%E6%B3%95](http://zh.wikipedia.org/zh-cn/%E8%92%99%E5%9C%B0%E5%8D%A1%E7%BE%85%E6%96%B9%E6%B3%95)
+
+## 蒙地卡罗方法求 PI
+假设有一个圆半径为1，那么四分之一圆面积就为 $\frac{\pi}{4}$，而包括此四分之一圆的正方形面积就为1，如下图[^wiki]：
+
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pi_30K.gif/220px-Pi_30K.gif)
 
 [^monte]: [http://mathfaculty.fullerton.edu/mathews//n2003/montecarlopimod.html](http://mathfaculty.fullerton.edu/mathews//n2003/montecarlopimod.html)
 
@@ -109,4 +115,9 @@ R = 30000   PI = 3.141726   time consume:4.000000
 R = 40000   PI = 3.141692   time consume:8.000000
 </pre>
 
-如果不计算随机数生成的消耗，第一种方法的复杂度是 $O(n)$，而后一种的是 $O(n^2)$.  第一种利用了随机生成器提高了运行效率，同时也降低了精度。第一种算法取100万级的数压力也不算大，第二种取到10万已经很囧了。但是后一种算法对于人来说和随机的方法没什么区别，如果有足够的耐心，用手也可以求出精度较高 $\pi$ 值;-)
+如果不计算随机数生成的消耗，第一种方法的复杂度是 $O(n)$，而后一种的是 $O(n^2)$.  第一种利用了随机生成器提高了运行效率，同时也降低了精度（即使取10的9次方个随机点时，其结果也仅在前4位与圆周率吻合[^wiki]）。第一种算法取100万级的数压力也不算大，第二种取到10万已经很囧了。但是后一种算法对于人来说和随机的方法没什么区别，如果有足够的耐心，用手也可以求出精度较高 $\pi$ 值;-)
+
+## a
+
+## b
+
