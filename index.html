@@ -5,6 +5,7 @@ tagline: 个人技术笔记
 ---
 {% include JB/setup %}
 <div class="row-fluid">
+    <div class='page-side' id='index-side'></div>
     <div class="span12" display="none"></div>
   {% for post in paginator.posts %}
         {% capture summary %}{{post.content | split:'<!--more-->' |first }}{% endcapture%}

@@ -6,6 +6,7 @@ description: ""
 group: "navigation"
 ---
 {% include JB/setup %}
+<div class='page-side' id='about-side'></div>
 
 ### 关于
 

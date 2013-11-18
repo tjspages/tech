@@ -122,3 +122,29 @@ footer{align-text:center;}
     margin: 0 auto;
     max-width:1100px;
 }
+
+.page-side{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    max-width: 500px;
+    box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#index-side{
+    background-image: url(https://d233eq3e3p3cv0.cloudfront.net/max/1000/0*cF2i1ZosSP_UTJig.jpeg);
+}
+#about-side{
+    background-image: url(/assets/themes/stephen/images/road.jpg);
+}
+#archive-side{
+    background-image: url(/assets/themes/stephen/images/milk-way.jpg);
+}
+#tag-side{
+    background-image: url(/assets/themes/stephen/images/mountain.jpg);
+}
+.page-body{padding-left:300px;}
