@@ -6,7 +6,7 @@ tags:
     - Github
     - ssh
 ---
-按照这个文章的步骤创建一个新 key, 比如名字叫：id_rsa_second 和 id_rsa_second.pub.
+按照[这篇文章](https://help.github.com/articles/generating-ssh-keys)的步骤创建一个新 key, 比如名字叫：id_rsa_second 和 id_rsa_second.pub.
 在.ssh 目录下创建一个文件config, 内容是：
 <pre>
 Host github-second
