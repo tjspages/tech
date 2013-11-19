@@ -3,7 +3,7 @@ title: 博客程序的演化和其他
 author: Stephen
 layout: post
 tags:
-    - Blog
+    - blog
     - web
 ---
 
