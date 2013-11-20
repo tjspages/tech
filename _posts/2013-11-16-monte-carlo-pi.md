@@ -31,8 +31,7 @@ tags:
 #include <string.h>
 #define SEED 35791246
 
-main(int argc, char* argv)
-{
+main(int argc, char* argv){
     int niter=0;
     double x,y;
     int i,count=0; /* # of points in the 1st quadrant of unit circle */
@@ -76,8 +75,7 @@ main(int argc, char* argv)
 #include <stdlib.h>
 #include <time.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     time_t start, end;
     int R = atoi(argv[1]);
     unsigned long R2 = R * R;
@@ -89,8 +87,7 @@ int main(int argc, char *argv[])
     for(y = 0; y < R; y++){
         y2[(int)y] = y * y;
     }
-    for (x = 0; x < R; x++)
-    {
+    for (x = 0; x < R; x++){
         x2 = x * x;
         for(y = 0; y < R; y++){
             total++;
