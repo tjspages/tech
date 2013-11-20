@@ -55,29 +55,32 @@
       <div class="span8">
         {{ content }}
       </div>
+<div id="toc" ></div>
       <!--
-    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.min.js"></script>
-    -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ ASSET_PATH }}/js/toc.js"></script> <script type="text/javascript">
-    $('#toc').toc();
-        $(function() {
-            $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
+      <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.min.js"></script>
+      -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type="text/javascript" src="{{ ASSET_PATH }}/js/toc.js"></script> 
+      
+      <script type="text/javascript">
+          $('#toc').toc();
+          $(function() {
+                  $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
+                  });
+$(function() {
+        window.prettyPrint && prettyPrint();
         });
-        $(function() {
-             window.prettyPrint && prettyPrint();
-        });
-    </script>
-    <script src="{{ ASSET_PATH }}/google-code-prettify/prettify.js" defer="defer"></script>
+</script>
+<script src="{{ ASSET_PATH }}/google-code-prettify/prettify.js" defer="defer"></script>
 
-      <div class="clear-both"></div>
-     <hr>
-       <footer>
-        <p>
-          Powered by <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
+<div class="clear-both"></div>
+<hr>
+<footer>
+<p>
+Powered by <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+</p>
+</footer>
     </div>
 
 
@@ -103,6 +106,35 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
+    <script>
+        $(document).ready(function(){
+            $(window).resize();
+            var tocLeft = $('#toc').offset().left;
+            $(window).scroll(function(){
+                $('#toc').css({
+                    position:'fixed',
+                    top:'160px',
+                    left:tocLeft
+                });
+
+            });
+
+            $(window).resize(function(){
+                $('#toc').css({
+                    position:'static'
+                    ,top:0
+                    ,left:'50px'
+                });
+
+                tocTop = $('#toc').offset().top;
+                tocLeft = $('#toc').offset().left;
+                $(window).trigger('scroll');
+            });
+
+                $(window).trigger('resize');
+        });
+    </script>
+
 </body>
 </html>
 
