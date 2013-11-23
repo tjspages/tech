@@ -146,3 +146,9 @@ footer{align-text:center;}
     background-image: url(/assets/themes/stephen/images/mountain.jpg);
 }
 .page-body{padding-left:300px;}
+
+.footnotes{
+    border-top-width: 1px;
+    border-top-style: dotted;
+    margin-top: 20px;
+}
