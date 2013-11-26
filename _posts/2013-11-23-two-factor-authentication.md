@@ -3,7 +3,7 @@ title: 身份验证的 2 步验证
 author: Stephen
 layout: post
 tags:
-    - Security
+    - security
 ---
 不久前 Github 账号遭到大面积的暴力破解攻击[^gh1]，Github 同时对弱口令账号做了处理[^gh2]。此事件后 2 步验证再次被频繁的提起。一般如果接入公司的 VPN 中，都会有 2 步验证的过程，某些银行也提供的类似服务，比如中国银行。
 <!--more-->

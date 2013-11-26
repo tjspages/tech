@@ -3,7 +3,7 @@ title: ［译文］ 如何创建 Jekyll 静态页面
 author: Stephen
 layout: post
 tags:
-    - 翻译
+    - translation
     - Jekyll
 ---
 作为[写文章](../posts/)的补充，Jekyll 还可以创建静态页面。

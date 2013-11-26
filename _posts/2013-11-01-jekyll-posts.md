@@ -3,7 +3,7 @@ title: ［译文］ 如何用 Jekyll 发表博客
 author: Stephen
 layout: post
 tags:
-    - 翻译
+    - translation
     - Jekyll
 ---
 Jeklly 的一个最好的特点是“关注 blog 本身”。这是指什么呢？简单的说就是写博客的过程被 
