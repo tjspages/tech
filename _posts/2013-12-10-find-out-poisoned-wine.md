@@ -1,5 +1,5 @@
 ---
-title: 在 30 个瓶水中找出一瓶有毒的
+title: 在 30 瓶水中找出一瓶有毒的
 author: Stephen
 layout: post
 tags:
