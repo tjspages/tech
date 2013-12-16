@@ -4,7 +4,6 @@ author: Stephen
 layout: post
 tags:
     - MySQL
-    - draft
 ---
 
 执行 SQL query 时，MySQL 会为 SQL 的执行尝试一个最优的执行计划。通过在查询命令前加 EXPLAIN 就可以看到 MySQL 的执行计划。EXPLAIN 是了解和优化 MySQL 查询的利器之一。
