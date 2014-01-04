@@ -152,3 +152,9 @@ footer{align-text:center;}
     border-top-style: dotted;
     margin-top: 20px;
 }
+
+img {
+background: url(../../module/theme/the-bizness/img/loading.gif?v=b8c01.gif) no-repeat center center;
+box-shadow: 8px 8px 15px #999;
+padding: 0;
+}
