@@ -16,4 +16,6 @@ group: "navigation"
 
 email: dc -e36022832084444747438047718666P ([这个 email 是怎么得到的](https://gist.github.com/sdpfoue/4970583))
 
-更多：<http://www.tjs.im/about/>
+在此之前写的一些和技术贴边的东西：<http://www.tjs.im/tag/Tech.html>
+
+更多关于：<http://www.tjs.im/about/>
