@@ -44,7 +44,7 @@ static rel_time_t realtime(const time_t exptime) {
 
 在 yii 和 memcache 相关的代码中 set 和 add 过期时间是这样处理的[^ft3]
 
-[^ft3]: 截止到 1.1.14 版
+[^ft3]: 当前到 1.1.14 版
 
 <pre>
 #framework/caching/CMemCache.php
