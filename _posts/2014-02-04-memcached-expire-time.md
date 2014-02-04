@@ -1,12 +1,13 @@
 ---
-title: Memcached 的过期时间
+title: Expire Time of Memcached
 author: Stephen
 layout: post
 tags:
     - memcached
     - yii
+categories : [lessons, beginner]
 ---
-在 Memcached 中和过期时间相关的有如下的代码
+Source code from Memcached refers to expire time:
 <pre>
 #define REALTIME_MAXDELTA 60*60*24*30
 
@@ -38,13 +39,13 @@ static rel_time_t realtime(const time_t exptime) {
 </pre>
 <!--more-->
 
-可以看出 memcached 定义了一个常量 REALTIME_MAXDELTA，时间是 30 天的时间。如果传来的数字大于这个常量，就认为是发来的是 unix timestamp 的绝对时间；如果小于这个时间就认为是相对于当前时间的相对时间。
+It can be read, memcached defines a const REALTIME_MAXDELTA which is 30 days. If expire large than this const, it will return the absolute unix timestamp. Or it will deal it as the number of seconds starting from current time.
 
-如果 memcached 服务器与应用服务器时间不一致，甚至差的多的时候则有可能出现比较严重问题。
+If the time on memcached server and app server differs a lot, it may cause something seriously unwanted.
 
-在 yii 和 memcache 相关的代码中 set 和 add 过期时间是这样处理的[^ft3]
+Code about memcache expire from Yii framework[^ft3]:
 
-[^ft3]: 当前到 1.1.14 版
+[^ft3]: Until today. I just submitted a patch to yii. [https://github.com/yiisoft/yii/pull/3201](https://github.com/yiisoft/yii/pull/3201)
 
 <pre>
 #framework/caching/CMemCache.php
@@ -69,7 +70,7 @@ static rel_time_t realtime(const time_t exptime) {
     }
 </pre>
 
-这里如果过期时间大于 0，yii 将设置的过期时间都转换成了***应用服务器上的***绝对过期时间。如果将这里改成取 expire 和 0 的最大值则可将这个参数和 php 代码中的 exprie[^ft][^ft2] 代码意思一至了。
+If expire is large than 0, Yii changes it to the ***ABSOLUTE TIME ON APP SERVER (NOT THE TIMESTAMP ON MEMCACHED SERVER)***. If we get the max value of 0 and expire, we can change the parameter just same as PHP memcache or memcached[^ft][^ft2].
 
 [^ft]: [Memcache::set](http://www.php.net/manual/en/memcache.set.php)
 [^ft2]: [Expiration Times](http://www.php.net/manual/en/memcached.expiration.php)
