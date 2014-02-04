@@ -5,7 +5,7 @@ layout: post
 tags:
     - memcached
     - yii
-categories : [lessons, beginner]
+categories : [English]
 ---
 Source code from Memcached refers to expire time:
 <pre>
