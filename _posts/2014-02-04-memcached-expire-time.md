@@ -84,7 +84,7 @@ Yii as a framework, not only changed the original meaning of this important para
 
 ![setValue](/assets/imgs/2014-2-5-setValue.png)
 
-It's really about choices of users, but not if somebody is using a "well-configured" server or not. 
+It's really about choices of users, but not "assume" if somebody is using a "well-configured" server or not. 
 
 :-(
 
