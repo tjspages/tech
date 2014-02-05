@@ -72,7 +72,7 @@ Code about memcache expire from Yii framework[^ft3]:
 
 If expire is large than 0, Yii changes it to the ***ABSOLUTE TIME ON APP SERVER (NOT THE TIMESTAMP ON MEMCACHED SERVER)***. If we get the max value of 0 and expire, we can change the parameter just same as PHP memcache or memcached[^ft][^ft2].
 
-###Updated at 5th Feb
+###Updated on 5th Feb
 The patch was rejected by Yii. Their feedback was:
 
 > Currently it uses the most precise method while allowing convenient relative time values. It is assumed that servers are synced (that's actually should be the case for all well-configured servers).
