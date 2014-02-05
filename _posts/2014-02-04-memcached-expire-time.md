@@ -41,7 +41,7 @@ static rel_time_t realtime(const time_t exptime) {
 
 It indicates memcached defines a const REALTIME_MAXDELTA which is 30 days. If expire large than this const, memcached will treate it as the absolute unix timestamp. Or memcached will use it as the number of seconds starting from current time.
 
-If the time on memcached server and app server differs a lot, it may cause something seriously unwanted.
+If the time on memcached server and app server differs a lot, the first way (set the unix timestamp as the expire time) may cause something seriously unwanted.
 
 Code about memcache expire from Yii framework[^ft3]:
 
