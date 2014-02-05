@@ -39,7 +39,7 @@ static rel_time_t realtime(const time_t exptime) {
 </pre>
 <!--more-->
 
-It can be read, memcached defines a const REALTIME_MAXDELTA which is 30 days. If expire large than this const, it will treate it as the absolute unix timestamp. Or it will use it as the number of seconds starting from current time.
+It can be read, memcached defines a const REALTIME_MAXDELTA which is 30 days. If expire large than this const, memcached will treate it as the absolute unix timestamp. Or memcached will use it as the number of seconds starting from current time.
 
 If the time on memcached server and app server differs a lot, it may cause something seriously unwanted.
 
