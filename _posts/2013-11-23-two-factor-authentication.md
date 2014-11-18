@@ -84,7 +84,7 @@ TOTP 是基于时间的一次性密码算法。它作为 HOTP 的一个补充出
 ##OTP 的本质
 OTP 的本质是生成一个复杂的密钥，同时保存在服务商和令牌中，然后加入一个变化因子以应对重放攻击（replay attack[^wiki_replay]）。对于暴力破解攻击，相比来说 HOTP 的安全性会更高一些，它引入了 2 个未知值，一个是密钥，另一个是当前的计数。
 
-而对于目前流利的 TOTP，由于当前的时间是一个共知的数值，所以变值其实只有一个就是密钥。那么针对 TOTP 的暴力攻击就可以落到对密钥的试探上，利用上面提到的 PHP 实现或其它任何什么语言的实现都可以，只不过增加了一点的破解成本。但是作为密钥，强度会大大强于多数的用户设置的密码，本质上 TOTP 对安全的增加还是落在密码强度的增加上[^fn1]。
+而对于目前流行的 TOTP，由于当前的时间是一个共知的数值，所以变值其实只有一个就是密钥。那么针对 TOTP 的暴力攻击就可以落到对密钥的试探上，利用上面提到的 PHP 实现或其它任何什么语言的实现都可以，只不过增加了一点的破解成本。但是作为密钥，强度会大大强于多数的用户设置的密码，本质上 TOTP 对安全的增加是落在密钥强度的增加上[^fn1]。
 
 [^fn1]: 当然作为对付暴力破解的一个非常有效有简单的方法就是限制一定时间内的试错数。
 
@@ -99,7 +99,7 @@ TOTP 对于一般用户体验上的提升是明显的：不再需要背下不同
 像马化腾所说，手机的便携性使其已经成为了人身体中的一部分[^mht]。但手机远远不是人体的一部分。作为身份验证的终极方案当然是基于生物特征的验证。手机上免费 OTP 软件可以增强几号的安全性，但体验无疑是变差了。iPhone 5s 在硬件上加上了指纹识别，这是个好的开始。虽然指纹这种东西作为身份标识已经不再可靠[^finger]，iPhone 5s 上的指纹识别被黑客们玩到崩坏[^ip_finger]。如果有一天基于可靠生物特征的廉价终端验证出现，并可以可靠的将验证结果传送给服务商才是身份验证的终极解决方案。
 
 [^mht]: [马化腾演讲实录：腾讯若无微信可能面临灾难](http://tech.sina.com.cn/i/2013-11-16/12328920038.shtml)
-[^ip_finger]: [https://203.208.46.145/search?hl=en&q=iphone5+finger+hack](https://203.208.46.145/search?hl=en&q=iphone5+finger+hack)
+[^ip_finger]: [https://www.google.co.jp/search?q=iphone5%2Bfinger%2Bhack](https://www.google.co.jp/search?q=iphone5%2Bfinger%2Bhack)
 
 [^finger]: [Why Fingerprints Aren't the Proof We Thought They Were](http://www.psmag.com/legal-affairs/why-fingerprints-arent-proof-47079/)
 
