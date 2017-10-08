@@ -13,4 +13,4 @@ tags:
 由于 Laravel 已经停止对 5.2 版本的支持，只能自行修复此问题。修复方法：[fix bad performance of resolve queueable entity](https://github.com/laravel/framework/pull/21583/commits/da2303c519cb08cf6aedca73b33be029f9345066)
 
 ### 顺带一提
-in_array 的性能比 is_set 差很多。O(n) 的时间复杂度在数据量大的时候比 O(1) 的性能差的非常明显。
+in_array 的性能比 isset 差很多。O(n) 的时间复杂度在数据量大的时候比 O(1) 的性能差的非常明显。
