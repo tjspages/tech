@@ -5,13 +5,13 @@ layout: post
 tags:
     - puzzle
 ---
-##问题
+## 问题
 给出一段股票的趋势图，找出某区间最大收益的方案。
 
 ![stock](/assets/imgs/2013-12-05-stock.png)
 <!--more-->
 
-##模拟数据生成
+## 模拟数据生成
 
 <pre>
 $data = array();
@@ -25,7 +25,7 @@ for($i = 0; $i <= 50; $i++){
 }
 </pre>
 
-##数据输出点阵趋势图
+## 数据输出点阵趋势图
 
 <pre>
 function time_chart($data){
@@ -59,12 +59,12 @@ function time_chart($data){
 }
 </pre>
 
-###效果
+### 效果
 ![stimulation](/assets/imgs/2013-12-05-stimulation.png)
 
-##分析
+## 分析
 
-###幸运
+### 幸运
 如果最小值出现在最大值前面，那么结果就是它了。
 <pre>
 function max_profit($data){
@@ -82,10 +82,10 @@ function max_profit($data){
 }
 </pre>
 
-###不够幸运
+### 不够幸运
 最小值出现在最大值后。
 
-####暴力解法
+#### 暴力解法
 将每一个值与后面所有的数值做差，保存最大的差值直到最后。这个很直观，效率低下，可以用来验证其它算法的结果。
 
 时间复杂度是 1 到 n 的等差数列和，也就是 $O(n^2)$。
@@ -108,7 +108,7 @@ function not_lucky_force($data){
 }
 </pre>
 
-####优化方法
+#### 优化方法
 按最小值和最大值划分 3 个区间。在第一个区间里找出最小值，求出此最小值与最大值的差值。在最后一个区间找出最大值，求此值与最小值的差值。中间区间的最小值如果出现在最大值前返回差值，比较三个差值，取最大的。如果中间区间的最小值出现在最大值前，重复上一过程。
 
 不考虑每次内部的排序[^ft]和递归的消耗的话，时间复杂度为 $O(\log_3 n)$
@@ -158,5 +158,5 @@ function not_lucky_optimised($data, &$step){
 }
 </pre>
 
-##完整代码
+## 完整代码
 [https://gist.github.com/sdpfoue/7808352](https://gist.github.com/sdpfoue/7808352)

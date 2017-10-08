@@ -9,7 +9,7 @@ tags:
 
 ## 1.8.0 版
 
-###当前是 foo 分支
+### 当前是 foo 分支
 
 <pre>
 git branch -u upstream/foo
@@ -20,7 +20,7 @@ git branch --set-upstream-to=upstream/foo
 </pre>
 
 
-###foo 不是当前分支
+### foo 不是当前分支
 
 <pre>
 git branch -u upstream/foo foo
@@ -30,7 +30,7 @@ git branch -u upstream/foo foo
 git branch --set-upstream-to=upstream/foo foo
 </pre>
 
-##1.7.0 版本
+## 1.7.0 版本
 
 <pre>
 git branch --set-upstream foo upstream/foo

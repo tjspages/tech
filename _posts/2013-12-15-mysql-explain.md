@@ -9,7 +9,7 @@ tags:
 执行 SQL query 时，MySQL 会为 SQL 的执行尝试一个最优的执行计划。通过在查询命令前加 EXPLAIN 就可以看到 MySQL 的执行计划。EXPLAIN 是了解和优化 MySQL 查询的利器之一。
 <!--more-->
 
-##EXPLAIN 的输出
+## EXPLAIN 的输出
 
 <pre>
 EXPLAIN SELECT * FROM users\G
@@ -112,7 +112,7 @@ Message: select `World`.`City`.`Name` AS `Name` from `World`.`City` join `World`
 1 row in set (0.00 sec)
 </pre>
 
-##参考
+## 参考
 * [EXPLAIN Output Format](http://dev.mysql.com/doc/refman/5.1/en/explain-output.html)
 
 [^qo]:  Query Optimizer

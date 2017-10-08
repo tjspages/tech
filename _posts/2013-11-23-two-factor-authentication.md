@@ -14,15 +14,15 @@ tags:
 
 [^gh2]: [GitHub bans weak passwords after brute-force attack results in compromised accounts](http://www.pcworld.com/article/2065340/github-bans-weak-passwords-after-bruteforce-attack-results-in-compromised-accounts.html)
 
-##两步验证
+## 两步验证
 两步验证是一种需要经过 2 次身份验证来确认一个用户是否是合法的访问一个计算机或网络上的服务[^wiki_two_step]，一般第一次是固定密码，第 2 次验证是一个一次性密码（One Time Password - OTP）。
 
-##OTP
+## OTP
 一次性密码（OTP）只对一次的登录会话是有效的，它可以避免传统的固定密码的易破解的缺点
 
-###OTP 算法
+### OTP 算法
 
-####HOTP
+#### HOTP
 
 HOTP 是基于 HMAC 算法的 OTP 算法
 
@@ -41,14 +41,14 @@ HOTP(K,C) = Truncate(HMAC-SHA-1(K,C))[^rfc_hotp]
 计算器的同步：服务器只有在验证成功后才会增加计数，令牌则是每次用户请求都会增加，所以令牌和服务器中的计数有可能出现不同步的现象。对于这个问题，建议是在服务器上设置一个向后窗口，长度 s，如果值不匹配服务器则计算基于后面 counter 的 HOTP 值，直到算到窗口尽头或匹配为止，然后重设计数器。s 保证了服务器不会永远向下检查，以导致拒绝服务攻击，也有效的限制了攻击的范围。s 在不影响正常使用的前提下应当设置的尽可能小。
 
 
-####TOTP
+#### TOTP
 TOTP 是基于时间的一次性密码算法。它作为 HOTP 的一个补充出现，让 HOTP 支持以时间为向前的移动因子（计数器）。每个密码产生的时间间隔为 30 秒。目前市面上大多数是这种算法。
 
-#####TOTP 的一种 PHP 实现
+##### TOTP 的一种 PHP 实现
 放在 Gist 上的一段代码（来自互联网）：[https://gist.github.com/sdpfoue/5128774](https://gist.github.com/sdpfoue/5128774)
 
 
-###免费的 OTP 软件令牌[^github]
+### 免费的 OTP 软件令牌[^github]
 智能移动端的普及大大降低了 OTP 令牌的成本，如果想就可以不再依赖于 RSA 等大公司的硬件令牌了。下面是一些手机上的免费应用：
  
 *    Google Authenticator (for Android/iPhone/BlackBerry)
@@ -58,12 +58,12 @@ TOTP 是基于时间的一次性密码算法。它作为 HOTP 的一个补充出
 [^github]: [https://help.github.com/articles/about-two-factor-authentication#configuring-2FA-through-a-mobile-application](https://help.github.com/articles/about-two-factor-authentication#configuring-2FA-through-a-mobile-application)
 
 
-###短信
+### 短信
 字面意思就很好理解：每次登录的时候发一个随机密码到登记的手机上，只要手机在手里就认为是本人。这种一次性密码，由于我国的几大运营商补卡的不严谨流程，最近爆出很多用身份证号码加姓名办假身份证之后盗号的新闻：[百度新闻搜索](http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%E5%81%87%E8%BA%AB%E4%BB%BD%E8%AF%81%20%E6%89%8B%E6%9C%BA&ie=utf-8)。
 
 至于你的姓名和身份证QQ手机号码等信息，如果有人想搞他们总有办法搞的到。
 
-##支持 2 步验证的服务商[^wiki_two_step]
+## 支持 2 步验证的服务商[^wiki_two_step]
 
 * Amazon
 * Dropbox
@@ -81,7 +81,7 @@ TOTP 是基于时间的一次性密码算法。它作为 HOTP 的一个补充出
 
 上面是维基上列出的服务，我还知道一家国内一家很早推出 2 步验证的服务商：坚果云。
 
-##OTP 的本质
+## OTP 的本质
 OTP 的本质是生成一个复杂的密钥，同时保存在服务商和令牌中，然后加入一个变化因子以应对重放攻击（replay attack[^wiki_replay]）。对于暴力破解攻击，相比来说 HOTP 的安全性会更高一些，它引入了 2 个未知值，一个是密钥，另一个是当前的计数。
 
 而对于目前流行的 TOTP，由于当前的时间是一个共知的数值，所以变值其实只有一个就是密钥。那么针对 TOTP 的暴力攻击就可以落到对密钥的试探上，利用上面提到的 PHP 实现或其它任何什么语言的实现都可以，只不过增加了一点的破解成本。但是作为密钥，强度会大大强于多数的用户设置的密码，本质上 TOTP 对安全的增加是落在密钥强度的增加上[^fn1]。
