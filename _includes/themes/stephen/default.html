@@ -51,10 +51,45 @@
   </script>
 
   <style>
-      @media (max-width: 800px) {
-          #web_brand{
-          }
-      }
+.pagination-centered{
+    text-align: center;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination ul>li {
+    display: inline;
+}
+
+
+.pagination ul>li>a, .pagination ul>li>span{
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-left-width: 0;
+}
+
+.pagination ul>.disabled>span, .pagination ul>.disabled>a, .pagination ul>.disabled>a:hover{
+    color: #999999;
+    background-color: transparent;
+    cursor: default;
+}
+
+.pagination ul>li:first-child>a, .pagination ul>li:first-child>span{
+    border-left-width: 1px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-left-radius: 4px;
+}
+
   </style>
 
   </head>

@@ -22,4 +22,5 @@ $router_collection = $routers->getRoutes();
 $router->domain();
 $router->getName();
 </pre>
+<!--more-->
 具体可以参考 API 文档：[https://laravel.com/api/5.2/Illuminate/Routing/Route.html](https://laravel.com/api/5.2/Illuminate/Routing/Route.html)
