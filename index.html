@@ -3,13 +3,12 @@ layout: default
 title: Tech Notes
 tagline: 个人技术笔记
 ---
-{% include JB/setup %}
-<div class="row-fluid">
+<div class="container-fluid" style="margin-top:50px;">
     <div class='page-side' id='index-side'></div>
-    <div class="span12" display="none"></div>
+    <div class="" display="none"></div>
   {% for post in paginator.posts %}
         {% capture summary %}{{post.content | split:'<!--more-->' |first }}{% endcapture%}
-    <div class="span12 row">
+    <div class="row">
         <h2><a class="title" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
         <div class="post_at_index">
             {{summary}}
