@@ -16,6 +16,7 @@ haproxy 在 socket 建立了之后严格按照调置和 http 协议中的约定�
 将 408 错误重定向到 /dev/null 后，haproxy 将不再对 408 错误做出提示，也就是出现 408 之后不返回错误给 client 而是直接关闭 socket。这时当使用 chrome 真正请求资源时，chrome 的预连接已经被关闭，chrome 只能重新发起一个全新的 tcp 完成一次 http 请求，暂避免这个现象。这是一个变通的解决办法。
 
 Chrome 的这个机制 3 年前就有了，为什么最近各 LB 突然出现这个问题，文章中没有给出原因。
+<!--more-->
 
 http://www.technize.net/chrome-extra-bandwidth/ 给出了关闭 chrome 预连接的方法
 
