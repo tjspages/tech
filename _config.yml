@@ -25,8 +25,8 @@ description_length: 200
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Tech Notes
-tagline: "技术笔记"
+title : Notes
+tagline: "笔记"
 author :
   name : Stephen
   github : sdpfoue
