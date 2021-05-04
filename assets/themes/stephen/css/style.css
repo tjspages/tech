@@ -201,4 +201,11 @@ padding: 0;
     border-bottom-left-radius: 4px;
 }
 
+.headimg{
+    width: 300px;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    }
+
 
