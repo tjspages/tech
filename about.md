@@ -10,6 +10,14 @@ group: "navigation"
 
 ### 关于
 
-工作学习中的技术笔记，由 [Jekyll](http://jekyllrb.com/) 生成，托管在 Github。
+聊聊投资，偶尔风月，不说技术。
 
-email: dc -e36022832084444747438047718666P ([这个 email 是怎么得到的](https://gist.github.com/sdpfoue/4970583))
+
+
+公众号：
+
+<img src="https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzkyMDEyNzU4NQ==&mid=2247483761&idx=1&sn=a76ebfb39af85be941eef2c4af138b38&send_time=" width="200" />
+
+微信：
+
+<img src="https://www.kindlezs.com/images/tjs.png" width="200" />
