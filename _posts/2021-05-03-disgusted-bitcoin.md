@@ -7,7 +7,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/cryptocurrency-and-interest.jpeg" alt="cryptocurrency" width="300" align="right" hspace="5" vspace="5"/>
+<img src="/assets/imgs/cryptocurrency-and-interest.jpeg" alt="cryptocurrency" class="headimg" />
 
 2021年巴菲特股东大会结束了，作为投资界盛会每年都会成为大家关注的焦点，今年大会上最具争议的话题应该非加密货币莫属。
 

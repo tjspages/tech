@@ -7,7 +7,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/caidog.png" alt="cryptocurrency" width="300" align="right" hspace="5" vspace="5"/>
+<img src="/assets/imgs/Betterment-Mutual-Funds.jpeg" alt="howtobuyfund" class="headimg"/>
 
 ### 一、基金赚钱，基民亏钱 
 
@@ -15,6 +15,8 @@ tags:
 
 <!--more-->
 
+
+<img src="/assets/imgs/caidog.png" alt="菜狗" width="300"  hspace="5" vspace="5"/>
 
 
 
