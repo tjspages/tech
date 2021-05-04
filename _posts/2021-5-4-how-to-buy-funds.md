@@ -15,9 +15,9 @@ tags:
 
 <!--more-->
 
-
+<p align="center">
 <img src="/assets/imgs/caidog.png" alt="菜狗" width="300"  hspace="5" vspace="5"/>
-
+</p>
 
 
 ### 二、实操
