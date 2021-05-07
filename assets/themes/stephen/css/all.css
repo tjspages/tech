@@ -4,3 +4,8 @@
     overflow: hidden;
     padding-inline-start: 0px;
 }
+
+.pagination ul{
+    padding-inline-start: 0px;
+}
+
