@@ -156,6 +156,13 @@ box-shadow: 8px 8px 15px #999;
 padding: 0;
 }
 
+.post-full img{
+#box-shadow: 8px 8px 15px #999;
+padding: 10px 0px;
+margin: 0px auto;
+display: block;
+}
+
 .post_at_index img {
 box-shadow: 8px 8px 15px #999;
 padding: 0;
