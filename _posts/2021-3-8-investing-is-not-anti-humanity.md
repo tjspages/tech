@@ -6,7 +6,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/202103141.jpeg" alt="" class="headimg" />
+<img src="/assets/imgs/202103141.jpeg" alt="" id="headimg" class="headimg" />
 
 今天的港A股血流成河，估计一会的美股也好不到哪里去。这样的市场必然是有人笑有人哭。可以预见的是被之前大涨的市场和各路网红忽悠进场而大卖的基金必然也会赢来一波强劲的赎回潮，反过来又会强化下跌的趋势。
 

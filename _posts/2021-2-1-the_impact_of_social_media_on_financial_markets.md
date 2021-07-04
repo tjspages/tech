@@ -6,7 +6,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/202102011.jpeg" alt="" class="headimg" style="display:block"/>
+<img src="/assets/imgs/202102011.jpeg" alt="" class="headimg" />
 
 发生在美国的GameStop事件发酵有一段时间了，自媒体们用一个又一个热血的标题大肆渲染此事。其实类似的事件在网络时代的今天已经不算新闻，只是这次的GME事件在当下流动性泛滥的大环境的一次比较极端的事件，多家机构损失惨重，著名的做空机构香橼（Citron Research）宣布停止做空。
 

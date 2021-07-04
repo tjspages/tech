@@ -7,7 +7,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/kelly.jpeg" alt="kelly bet" class="headimg" />
+<img src="/assets/imgs/kelly.jpeg" alt="kelly bet" class="headimg" id="headimg" />
 
 欧洲杯激战正酣，足彩竞猜也非常火热，赔率胜率冲上热词。赔率是博彩公司从总赌资中收取手续费后剩下的部分当作奖金与下游情况计算出来的收益率。
 

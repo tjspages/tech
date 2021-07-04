@@ -7,7 +7,7 @@ tags:
     - 投资
 ---
 
-<img src="/assets/imgs/Betterment-Mutual-Funds.jpeg" alt="howtobuyfund" class="headimg"/>
+<img src="/assets/imgs/Betterment-Mutual-Funds.jpeg" alt="howtobuyfund" id="headimg" class="headimg"/>
 
 ### 一、基金赚钱，基民亏钱 
 
