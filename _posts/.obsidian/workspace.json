@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7a46f62b42811cbf",
+        "id": "4854bbce37cad8f8",
         "type": "tabs",
         "children": [
           {
-            "id": "7281ba9c96150ce6",
+            "id": "1fd0c83c0de7cb0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -169,13 +169,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "7281ba9c96150ce6",
+  "active": "1fd0c83c0de7cb0c",
   "lastOpenFiles": [
+    "assets/imgs 1.md",
+    "2025-10-14-statistical-arbitrage.md",
+    "assets/imgs.md",
+    "assets",
     "2021-7-10-chinese-stocks-again.md",
     "2021-7-18-twenty-thousand-yuan-lesson.md",
     "2025-09-02-futures-roll-yield.md",
     "2025-09-22-equity-bond-see-saw.md",
-    "2025-10-14-statistical-arbitrage.md",
     "2025-10-14-statistical-arbitrage.md.tmp.2548.1760435178324",
     "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434719609",
     "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434541363",
@@ -185,7 +188,6 @@
     "Pasted image 20251014172528.png",
     "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433771502",
     "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433757266",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433739791",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433725171"
+    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433739791"
   ]
 }
