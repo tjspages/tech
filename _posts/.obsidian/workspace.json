@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-14-statistical-arbitrage.md",
+                "file": "2025-10-17-odds-and-probability-in-options.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-14-statistical-arbitrage"
+              "title": "2025-10-17-odds-and-probability-in-options"
             }
           }
         ]
@@ -171,23 +171,24 @@
   },
   "active": "1fd0c83c0de7cb0c",
   "lastOpenFiles": [
-    "assets/imgs 1.md",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679366774",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679352184",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679339307",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679330200",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679318267",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674203745",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674175930",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674162768",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674147731",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674121851",
+    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674093005",
     "2025-10-14-statistical-arbitrage.md",
+    "assets/imgs 1.md",
     "assets/imgs.md",
-    "assets",
     "2021-7-10-chinese-stocks-again.md",
     "2021-7-18-twenty-thousand-yuan-lesson.md",
     "2025-09-02-futures-roll-yield.md",
     "2025-09-22-equity-bond-see-saw.md",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760435178324",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434719609",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434541363",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434419231",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434282048",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760434089292",
-    "Pasted image 20251014172528.png",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433771502",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433757266",
-    "2025-10-14-statistical-arbitrage.md.tmp.2548.1760433739791"
+    "Pasted image 20251014172528.png"
   ]
 }
