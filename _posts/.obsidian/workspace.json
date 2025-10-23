@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4854bbce37cad8f8",
+        "id": "b943fa69e5305c2a",
         "type": "tabs",
         "children": [
           {
-            "id": "1fd0c83c0de7cb0c",
+            "id": "29bc02d38306d6ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-17-odds-and-probability-in-options.md",
+                "file": "2025-10-23-respond-not-predict.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-17-odds-and-probability-in-options"
+              "title": "2025-10-23-respond-not-predict"
             }
           }
         ]
@@ -169,19 +169,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "1fd0c83c0de7cb0c",
+  "active": "29bc02d38306d6ce",
   "lastOpenFiles": [
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679366774",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679352184",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679339307",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679330200",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760679318267",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674203745",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674175930",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674162768",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674147731",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674121851",
-    "2025-10-17-odds-and-probability-in-options.md.tmp.32400.1760674093005",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761206855030",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761206797441",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761206790209",
+    "2025-10-23-respond-not-predict.md",
+    "2025-10-17-odds-and-probability-in-options.md",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761202159327",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761202121893",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761202112617",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761202021747",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761201996548",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761201982237",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761201939914",
+    "2025-10-23-respond-not-predict.md.tmp.35488.1761201916698",
     "2025-10-14-statistical-arbitrage.md",
     "assets/imgs 1.md",
     "assets/imgs.md",
