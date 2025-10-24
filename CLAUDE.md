@@ -119,40 +119,127 @@ The site uses a sophisticated theme switching system:
 
 **Language Features:**
 - **Primary Chinese** with English technical terms and quotes
+- **Chinese full-width punctuation**: All Chinese text must use Chinese full-width punctuation marks (。、,;:?!)
+- **Proper quotation marks**: Use matched pairs of ""for double quotes and ''for single quotes in Chinese text
 - **Concise and direct** expression, avoiding redundancy
 - **Accurate technical terminology** with clear concept explanations
-- **Colloquial elements** including internet slang
+- **Colloquial elements**: Natural conversational tone including internet slang and everyday expressions (e.g., "把投资玩成了赌博", "抄作业")
 
 **Structure Patterns:**
-- **Clear, focused titles** pointing directly to core topics
-- **`<!--more-->` tags** for article excerpt separation
-- **Clean paragraph breaks** with extensive use of h3 headings
-- **Rich visual content** with technical diagrams and illustrations
+- **Clear, focused titles** pointing directly to core topics, often using descriptive phrases or questions
+- **`<!--more-->` tag** placed after the opening hook/introduction (typically within first 2-3 paragraphs)
+- **Hierarchical headings**: Use `###` for section headers (h3), numbered lists for subsections
+- **Clean paragraph breaks**: Short paragraphs with blank lines between them for better readability
+- **Rich visual content**: Lead images with `class="headimg"`, inline diagrams, charts, and screenshots
+- **Image placement**: Centered images often wrapped in `<p style="text-align:center">` or `<p align="center">` tags
 
-**Technical Article Style:**
-- **Practical orientation**: Concrete command-line examples and code snippets
-- **Progressive depth**: Complex concepts explained through simple examples
-- **Mathematical notation**: MathJax-rendered formulas when appropriate
-- **Comprehensive references**: Extensive external links and footnotes
+**Technical Article Style (2013-2018):**
+- **Practical orientation**: Concrete command-line examples in `<pre>` blocks
+- **Tool-focused**: Real-world usage scenarios and parameter explanations
+- **Progressive depth**: Start with simple use cases, build to complex scenarios
+- **Code snippets**: Command examples with actual output
+- **Mathematical notation**: MathJax-rendered formulas with LaTeX syntax (e.g., $formula$)
+- **Comprehensive references**: Bullet-pointed reference lists at the end with Chinese and English sources
+- **Debugging mindset**: Focus on problem-solving and troubleshooting approaches
 
-**Investment Article Style:**
-- **Rational analysis**: Data-driven and logic-based reasoning
-- **Personal reflection**: Honest documentation of investment mistakes and lessons
+**Investment Article Style (2021-2025):**
+- **Structured analysis**: Multi-section format with clear numbered/titled sections
+- **Data-driven arguments**: Specific numbers, percentages, dates, and historical data
+- **Personal reflection**: Honest documentation of mistakes and lessons learned (e.g., "二万元的学费")
 - **Clear value positions**: Definitive stance on speculation and market phenomena
-- **Practical experience**: Sharing specific investment strategies and operations
+- **Practical experience**: Sharing specific investment strategies with implementation details
+- **Risk disclosure**: Explicit warnings about risks, often with bold text emphasis
+- **Scholarly rigor**: Extensive footnote citations using `[^1]` format with full reference list
+- **Metaphorical explanations**: Complex concepts explained through analogies (e.g., "房租式生意")
+- **Summary sections**: Concluding thoughts that distill key insights
 
 **Expression Approach:**
 - **Objective and calm**: Fact-based analysis avoiding emotional language
 - **Logical rigor**: Clear argumentation process with evidence-based conclusions
-- **Self-critical**: Willingness to acknowledge errors and limitations
+- **Reliable sources**: All arguments and claims must be supported by credible citations and references
+- **Self-critical**: Willingness to acknowledge errors and limitations (e.g., "贪婪", "犯了错误")
 - **Pragmatic attitude**: Focus on practical effects and actionable insights
+- **Reader empathy**: Addressing common concerns and misconceptions directly
+- **Balanced perspective**: Presenting multiple viewpoints before concluding
 
 ### Content Writing Guidelines
-When creating new content for this blog:
-- Use Chinese as primary language with English technical terms when appropriate
-- Structure articles with clear h3 sections and `<!--more-->` excerpt breaks
-- Include relevant code examples, mathematical formulas, or data visualizations
-- Maintain objective, analytical tone with personal insights
-- Add appropriate tags reflecting the article's technical domain or investment theme
-- Reference external sources with links and footnotes
-- Use images stored in `assets/imgs/` directory with descriptive alt text
+
+**Article Structure Template:**
+```markdown
+---
+title: [清晰直接的标题]
+author: Stephen
+layout: post
+tags:
+    - [主要标签]
+    - [次要标签]
+---
+
+<img src="/assets/imgs/[图片文件名]" alt="[描述]" class="headimg" />
+
+[开篇段落：直接切入主题，提出问题或观点]
+
+<!--more-->
+
+### [一级小标题]
+[内容段落...]
+
+### [二级小标题]
+[内容段落...]
+
+## [参考文献或总结]
+[相关链接和引用]
+```
+
+**Writing Best Practices:**
+
+1. **Opening Hook**: Start with a compelling scenario, question, or observation that immediately engages readers
+2. **Use `<!--more-->` correctly**: Place after 1-3 opening paragraphs to create an effective excerpt
+3. **Section organization**:
+   - Use `###` (h3) for main sections
+   - Use numbered lists (一、二、三) or clear titles for subsections
+   - Keep sections focused with 3-5 paragraphs each
+4. **Paragraph style**:
+   - Short paragraphs (2-4 sentences)
+   - Double line breaks between paragraphs for readability
+   - One idea per paragraph
+5. **Code and commands** (for technical articles):
+   - Wrap in `<pre>` blocks for command-line examples
+   - Show actual output when helpful
+   - Add brief explanations before or after code blocks
+6. **Mathematical formulas** (when needed):
+   - Use inline LaTeX: `$formula$`
+   - Display mode for important equations: `$$formula$$`
+   - Explain formulas in plain language
+7. **Images**:
+   - Store in `assets/imgs/` directory
+   - Lead image: `<img src="/assets/imgs/file.jpg" alt="description" class="headimg" />`
+   - Centered images: Wrap in `<p style="text-align:center">` or `<p align="center">`
+   - Always provide descriptive alt text
+8. **References and citations**:
+   - Use footnote format `[^1]` for investment/research articles
+   - Include full reference list at end with `[^1]:` format
+   - For technical articles, use bullet-pointed reference section
+9. **Tone and voice**:
+   - Write conversationally but maintain professionalism
+   - Use "我" for personal experiences and lessons
+   - Address reader directly when appropriate ("你可以...", "如果...")
+   - Be honest about mistakes and limitations
+10. **Tags selection**:
+    - 2-4 tags per article
+    - Technical articles: tool names, technologies, concepts
+    - Investment articles: 投资, 风险管理, 复盘, etc.
+    - Be consistent with existing tag taxonomy
+11. **Formatting emphasis**:
+    - **Bold** for key concepts and important warnings
+    - *Italics* sparingly
+    - Use bullet points for lists and key takeaways
+    - Block quotes `>` for important citations
+12. **Final review checklist**:
+    - [ ] Chinese full-width punctuation throughout
+    - [ ] Proper quotation marks ("" not "")
+    - [ ] `<!--more-->` tag present
+    - [ ] Images properly referenced and alt text provided
+    - [ ] All links and references verified
+    - [ ] Tags appropriate and consistent
+    - [ ] Spelling and grammar checked

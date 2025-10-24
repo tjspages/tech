@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-23-respond-not-predict.md",
+                "file": "2025-10-24-leveraged-etf-volatility-trap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-23-respond-not-predict"
+              "title": "2025-10-24-leveraged-etf-volatility-trap"
             }
           }
         ]
@@ -171,19 +171,27 @@
   },
   "active": "29bc02d38306d6ce",
   "lastOpenFiles": [
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761295530538",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761295097307",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761294778264",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761294546580",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761294002773",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761293829699",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761293298780",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761293088700",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761293073662",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761292703988",
+    "2025-10-24-leveraged-etf-volatility-trap.md.tmp.15164.1761292171415",
     "2025-10-17-odds-and-probability-in-options.md",
-    "2025-10-23-respond-not-predict.md",
-    "2025-10-23-respond-not-predict.md.bak",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761206855030",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761206797441",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761206790209",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761202159327",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761202121893",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761202112617",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761202021747",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761201996548",
-    "2025-10-23-respond-not-predict.md.tmp.35488.1761201982237",
+    "2025-10-24-leveraged-etf-volatility-trap.md",
     "2025-10-14-statistical-arbitrage.md",
+    "2025-10-23-respond-not-predict.md",
+    "2013-11-01-jekyll-pages.md",
+    "2017-10-19-xhgui-custom-setting.md",
+    "2021-7-4-focusing-on-short-term-fluctuations-again.md",
+    "2021-5-5-risk.md",
+    "2017-10-08-mb_strpos-performance.md",
+    "2014-01-16-strace.md",
     "assets/imgs 1.md",
     "assets/imgs.md",
     "2021-7-10-chinese-stocks-again.md",
