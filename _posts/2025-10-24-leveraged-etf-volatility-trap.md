@@ -8,7 +8,7 @@ tags:
   - 杠杆ETF
 ---
 
-<img src="/assets/imgs/leveraged_etf.jpg" alt="Leveraged ETF" class="headimg" />
+<img src="/assets/imgs/lever.png" alt="Leveraged ETF" class="headimg" />
 
 
 近年来，杠杆ETF因其极低的参与门槛吸引了大量散户投资者。不需要开通期权账户，不需要理解复杂的衍生品定价，甚至不需要维持保证金——只要有个股票账户，任何人都可以像买普通股票一样买入TQQQ,瞬间获得3倍杠杆敞口。让许多新手投资者趋之若鹜：有人看到TQQQ过去15年涨了143倍，幻想着复制这个神话；有人觉得自己看准了科技股趋势，想用杠杆放大收益；还有人单纯因为账户资金少，希望通过杠杆快速致富。
