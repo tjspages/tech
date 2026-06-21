@@ -126,4 +126,4 @@ HMM 识别市场状态（先验：现在是牛市还是熊市？）
 
 ---
 
-*关联阅读：[只应对不预测](/2025/10/23/respond-not-predict/) · [贝叶斯定理：最被误解的应对工具](/2026/06/19/bayesian-is-response-not-prediction/)*
+*关联阅读：[只应对不预测](/2025/10/23/respond-not-predict.html) · [贝叶斯定理：最被误解的应对工具](/2026/06/19/bayesian-is-response-not-prediction.html)*
