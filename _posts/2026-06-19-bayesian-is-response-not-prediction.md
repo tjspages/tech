@@ -7,7 +7,7 @@ tags:
     - 风险管理
     - 统计
 ---
-<img src="/images/2026-06-19-bayesian-is-response-not-prediction.png" />
+<img src="/images/2026-06-19-bayesian-is-response-not-prediction.png" class="headimg" />
 针对文章《只应对不预测》，有读者问了一个很好的问题：
 
 > 贝叶斯定理算预测还是应对？它不就是根据各种条件来调整概率吗？
