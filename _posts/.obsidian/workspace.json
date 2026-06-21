@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b943fa69e5305c2a",
+        "id": "36ebfc4237719810",
         "type": "tabs",
         "children": [
           {
-            "id": "29bc02d38306d6ce",
+            "id": "5a9c7c36e4db767e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-14-true-risk-free-arbitrage-in-options.md",
+                "file": "2026-06-19-bayesian-is-response-not-prediction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-14-true-risk-free-arbitrage-in-options"
+              "title": "2026-06-19-bayesian-is-response-not-prediction"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -160,19 +160,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
     }
   },
-  "active": "29bc02d38306d6ce",
+  "active": "5a9c7c36e4db767e",
   "lastOpenFiles": [
-    "2025-10-24-leveraged-etf-volatility-trap.md",
     "2025-11-14-true-risk-free-arbitrage-in-options.md",
+    "2026-06-19-bayesian-is-response-not-prediction.md",
+    "2026-06-20-bayesian-to-quant-decision-chain.md",
+    "2026-06-20-bayesian-to-quant-decision-chain.md.tmp.35496.e0323728e8b9",
+    "2026-06-19-bayesian-is-response-not-prediction.md.bak",
+    "2026-06-19-bayesian-is-response-not-prediction.md.tmp.35496.0d05364d9b60",
+    "2025-10-24-leveraged-etf-volatility-trap.md",
     "2025-11-14-true-risk-free-arbitrage-in-options.md.bak",
     "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763278152462",
     "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763278135272",
@@ -180,9 +185,6 @@
     "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763278109039",
     "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763278093862",
     "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763278078492",
-    "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763277998005",
-    "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763277980834",
-    "2025-11-14-true-risk-free-arbitrage-in-options.md.tmp.12052.1763277968993",
     "2025-10-17-odds-and-probability-in-options.md",
     "2025-10-14-statistical-arbitrage.md",
     "2025-10-23-respond-not-predict.md",
