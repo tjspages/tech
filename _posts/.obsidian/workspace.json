@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-06-20-bayesian-to-quant-decision-chain.md",
+                "file": "2026-06-22-all-strategies-find-anchor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-20-bayesian-to-quant-decision-chain"
+              "title": "2026-06-22-all-strategies-find-anchor"
             }
           }
         ]
@@ -171,8 +171,10 @@
   },
   "active": "1425bf4e540a5da6",
   "lastOpenFiles": [
-    "2026/06/19/bayesian-is-response-not-prediction.html.md",
+    "2026-06-22-all-strategies-find-anchor.md.bak",
+    "2026-06-22-all-strategies-find-anchor.md.tmp.44780.2ec8eac00a6d",
     "2026-06-20-bayesian-to-quant-decision-chain.md",
+    "2026/06/19/bayesian-is-response-not-prediction.html.md",
     "2026/06/19",
     "2026/06",
     "2026",
@@ -186,7 +188,6 @@
     "2026-06-19-bayesian-is-response-not-prediction.md.bak",
     "2026-06-19-bayesian-is-response-not-prediction.md.tmp.35496.0d05364d9b60",
     "2025-10-24-leveraged-etf-volatility-trap.md",
-    "2025-11-14-true-risk-free-arbitrage-in-options.md.bak",
     "2025-10-17-odds-and-probability-in-options.md",
     "2025-10-14-statistical-arbitrage.md",
     "2025-10-23-respond-not-predict.md",
