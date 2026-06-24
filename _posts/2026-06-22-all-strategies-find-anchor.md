@@ -8,7 +8,7 @@ tags:
     - 套利
 ---
 
-<img src="/images/2026-06-22-all-strategies-find-anchor 2026-06-22-all-strategies-find-anchor.png" class="headimg" />
+<img src="/images/2026-06-22-all-strategies-find-anchor.png" class="headimg" />
 
 很多人把投资理解成这样一件事：判断现在是高点还是低点，低点买，高点卖。
 
