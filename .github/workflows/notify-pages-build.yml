@@ -1,0 +1,36 @@
+name: Notify Feishu on Pages Build
+
+on:
+  page_build:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Feishu notification
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          STATUS: ${{ github.event.build.status }}
+          COMMIT: ${{ github.event.build.commit }}
+          ERROR_MSG: ${{ github.event.build.error.message }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ "$STATUS" = "errored" ]; then
+            TITLE="❌ GitHub Pages 构建失败"
+          else
+            TITLE="✅ GitHub Pages 构建成功"
+          fi
+
+          BODY="仓库：$REPO
+commit：$COMMIT"
+          if [ "$STATUS" = "errored" ] && [ -n "$ERROR_MSG" ]; then
+            BODY="$BODY
+错误：$ERROR_MSG"
+          fi
+
+          PAYLOAD=$(jq -n --arg text "$TITLE
+$BODY" '{msg_type: "text", content: {text: $text}}')
+
+          curl -sS -X POST "$FEISHU_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD"
