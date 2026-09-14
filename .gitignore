@@ -4,3 +4,6 @@ _site/
 *cache*
 *.bak
 .obsidian/
+
+# md2wechat
+tools/md2wechat/node_modules/
