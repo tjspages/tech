@@ -1,5 +1,5 @@
 ---
-title: 高景气赛道的钱是怎么赚到的：能抄的部分，和抄不了的部分
+title: 高景气不是“增速高”，是“增速在变快”
 author: Stephen
 layout: post
 tags:
@@ -9,17 +9,15 @@ tags:
     - 风险管理
 ---
 
-<img src="/assets/imgs/2026-09-14-prosperity-chain-and-otc-leverage.png" alt="产业链上下游传导示意：下游扩产的订单沿链条传向上游供应商，末端接上一根放大收益的杠杆" class="headimg" />
+<img src="/assets/imgs/2026-09-14-prosperity-is-delta-not-level.png" alt="两条曲线对比：一条位置更高但已经走平，另一条起点很低却持续上翘并最终交叉反超，象征景气的绝对值与变化速度之别" class="headimg" />
 
-周末参加了一个小型投资主题沙龙，主持人分享的内容很有价值，整理了一个笔记分享一下。
+周末参加了一个小型投资主题沙龙，主持人是私募经理，也是一个著名游资的团队成员，拿到了非常大的结果。分享的内容很有价值，整理了一个笔记分享一下。
 
-当事人确实赚到了钱。但听这类分享最容易犯的错，是把结果当成方法。
-
-一套打法里，通常混着两种完全不同的东西：一种是逻辑，谁都能学；另一种是资源，学不来。把它们分开，比记住任何一个案例都有用。
+一套打法里，通常混着两种完全不同的东西：一种是逻辑，谁都能学；另一种是资源，学不来。
 
 <!--more-->
 
-### 一、高景气不是“增速高”，是“增速在变快”
+### 一、看的不是绝对值，是 Δ
 
 大部分人选股是从公司开始的：这家公司好不好，ROE 高不高，PE 贵不贵。
 
@@ -35,11 +33,7 @@ tags:
 
 所以值得盯的不是一个静态数字，而是一组变化。写成一个评分的话，大概是这个样子：
 
-$$\begin{aligned}
-S_{industry} &= w_1\Delta Demand + w_2\Delta Price + w_3\Delta Order \\
-&\quad + w_4\Delta Inventory + w_5\Delta CapacityUtilization \\
-&\quad + w_6\Delta EarningsExpectation
-\end{aligned}$$
+$$S_{industry} = w_1\Delta Demand + w_2\Delta Price + w_3\Delta Order + w_4\Delta Inventory + w_5\Delta CapacityUtilization + w_6\Delta EarningsExpectation$$
 
 六个变量分别是：需求增速的变化、产品价格的变化、订单的变化、库存的变化、产能利用率的变化、以及卖方盈利预期的修正方向。
 
@@ -203,11 +197,7 @@ $$3\text{亿} \times (0.6 - 0.4) = 6000\text{万}$$
 
 券商当然也不是做慈善。它的损益大致是：
 
-$$\begin{aligned}
-DealerPnL &\approx OptionPricingMargin + BidAsk \\
-&\quad + FinancingSpread + Fees \\
-&\quad - HedgeCost - Slippage
-\end{aligned}$$
+$$DealerPnL \approx OptionPricingMargin + BidAsk + FinancingSpread + Fees - HedgeCost - Slippage$$
 
 赚的是定价利差、买卖价差、融资利差和交易费用，减掉对冲成本和滑点。它把“赌方向”变成了“定价 + 对冲 + 风险管理”的生意。
 
@@ -252,12 +242,7 @@ $$\text{方向正确} + \text{时间错误} \Rightarrow Premium \rightarrow 0$$
 
 左边那一列全都是可以量化的东西。真要做成模型，大概长这样：
 
-$$\begin{aligned}
-TotalScore &= w_1 IndustryProsperity + w_2 BottleneckScore \\
-&\quad + w_3 SupplyChainSignal + w_4 EarningsRevision \\
-&\quad + w_5 EarningsElasticity + w_6 TrendConfirmation \\
-&\quad - w_7 ValuationCrowding
-\end{aligned}$$
+$$TotalScore = w_1 IndustryProsperity + w_2 BottleneckScore + w_3 SupplyChainSignal + w_4 EarningsRevision + w_5 EarningsElasticity + w_6 TrendConfirmation - w_7 ValuationCrowding$$
 
 前六项前面都是加号：景气、瓶颈、产业链信号、盈利上修、利润弹性、趋势确认。只有最后一项是减号——拥挤度。前面做得再对，如果所有人都已经站在这条船上，收益也已经被别人拿走了。
 
