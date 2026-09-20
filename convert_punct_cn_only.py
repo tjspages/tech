@@ -2,8 +2,45 @@ import sys
 import re
 import os
 
+# 不参与标点转换的片段：代码块、行内代码、HTML 标签、数学公式
+# HTML 标签整体保护，可覆盖 alt="中文描述" / title="中文" 这类属性值
+PROTECT_PATTERNS = [
+    r'```.*?```',      # 围栏代码块
+    r'~~~.*?~~~',      # 围栏代码块（波浪线）
+    r'`[^`\n]+`',      # 行内代码
+    r'<[^<>\n]+>',     # HTML 标签
+    r'\$\$.*?\$\$',    # 展示公式
+    r'\$[^$\n]+\$',    # 行内公式
+]
+
+PLACEHOLDER = '\x00%d\x00'
+PLACEHOLDER_RE = re.compile(r'\x00(\d+)\x00')
+
+
+def _protect(text):
+    """把不该转换的片段换成占位符，返回替换后的文本和还原表"""
+    store = []
+
+    def stash(match):
+        store.append(match.group(0))
+        return PLACEHOLDER % (len(store) - 1)
+
+    for pattern in PROTECT_PATTERNS:
+        text = re.sub(pattern, stash, text, flags=re.S)
+    return text, store
+
+
+def _restore(text, store):
+    """还原占位符，循环到没有占位符为止（片段之间可能嵌套）"""
+    while PLACEHOLDER_RE.search(text):
+        text = PLACEHOLDER_RE.sub(lambda m: store[int(m.group(1))], text)
+    return text
+
+
 def convert_punctuation(text):
     """仅当标点前是中文时才转换为全角，不影响[^1]、(1)、链接等"""
+
+    text, _store = _protect(text)
 
     mapping = {
         ',': '，',
@@ -72,6 +109,8 @@ def convert_punctuation(text):
 
     # 3\ufe0f\u20e3 \u5f15\u53f7\u8f6c\u5168\u89d2\u540e\u518d\u8865\u4e00\u6b21\uff0c\u5904\u7406\u7d27\u8ddf\u5728 \u201d\u300f\uff09\u540e\u9762\u7684\u534a\u89d2\u6807\u70b9
     text = re.sub(CN_LEFT + r'([,\.?!:;])', lambda m: m.group(0)[0] + mapping.get(m.group(1), m.group(1)), text)
+
+    text = _restore(text, _store)
 
     return text
 
