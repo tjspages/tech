@@ -74,3 +74,92 @@
 }
 
 
+
+/* ── 文章目录 ──────────────────────────────────────────────
+   放在 all.css 而不是 style.css，原因同上：style.css 带
+   media="min-device-width:800px"，媒体查询在那边说了不算。 */
+
+/* JS 没跑、或标题太少没生成目录时，这个空 div 不该占位 */
+#toc:empty {
+    display: none !important;
+}
+
+/* 窄屏（正文已经是全宽）不显示目录 */
+#toc {
+    display: none;
+}
+
+/* 点击目录跳转后，标题不会贴着固定导航栏 */
+.post-full h2,
+.post-full h3 {
+    scroll-margin-top: 80px;
+}
+
+@media (min-width: 992px) {
+    #toc {
+        display: block;
+        float: right;
+        width: 250px;
+        /* sticky 而不是 fixed：位置由正常布局算出来，
+           不需要 JS 去量 left，窗口缩放也不会错位 */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90px;
+        max-height: calc(100vh - 140px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        margin: 24px 0 40px;
+        padding: 14px 18px;
+        background: #fff;
+        box-shadow: 0 1px 4px #ccc;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #toc .toc-caption {
+        margin: 0 0 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #999;
+    }
+
+    #toc ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #toc a {
+        display: block;
+        padding: 5px 10px;
+        color: #666;
+        text-decoration: none;
+        border-left: 2px solid transparent;
+        word-break: break-word;
+    }
+
+    #toc a:hover {
+        color: #111;
+        background: #fafafa;
+    }
+
+    #toc .toc-h3 a {
+        padding-left: 24px;
+        font-size: 13px;
+        color: #888;
+    }
+
+    #toc .toc-active > a {
+        color: #111;
+        background: #f5f5f5;
+        border-left-color: #57A957;
+    }
+}

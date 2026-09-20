@@ -147,27 +147,21 @@
     </nav>
     <div class="container-narrow-post">
 
+      <div id="toc"></div>
+
       <div class="col-md-8">
         {{ content }}
       </div>
-<div id="toc" ></div>
       <!--
       <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.9.1.min.js"></script>
       <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.unveil.min.js"></script>
       -->
       <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
       <script type="text/javascript" src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="{{ ASSET_PATH }}/js/toc.js"></script>
-      <script type="text/javascript">
-          if (screen && screen.width > 800) {
-              document.write('<script type="text/javascript" src="{{ ASSET_PATH }}/js/toc.js"><\/script>');
-          }
-      </script>
+      <!-- 目录：不依赖 jQuery，显示与否由 all.css 的媒体查询决定 -->
+      <script type="text/javascript" src="{{ ASSET_PATH }}/js/toc.js" defer></script>
 
       <script type="text/javascript">
-          if (screen && screen.width > 800) {
-              $('#toc').toc();
-          }
               $(function() {
                       $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
                       });
@@ -208,36 +202,6 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
-    <script>
-        $(document).ready(function(){
-            //$("img").unveil();
-            $(window).resize();
-            var tocLeft = $('#toc').offset().left;
-            $(window).scroll(function(){
-                $('#toc').css({
-                    position:'fixed',
-                    top:'160px',
-                    left:tocLeft
-                });
-
-            });
-
-            $(window).resize(function(){
-                $('#toc').css({
-                    position:'static'
-                    ,top:0
-                    ,left:'50px'
-                });
-
-                tocTop = $('#toc').offset().top;
-                tocLeft = $('#toc').offset().left;
-                $(window).trigger('scroll');
-            });
-
-                $(window).trigger('resize');
-        });
-    </script>
-
 
 <script>
 var _hmt = _hmt || [];
