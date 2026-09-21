@@ -49,6 +49,7 @@ const opts = {
   text: '#3f3f3f', // 正文颜色
   fontSize: 16,
   withTitle: false, // 是否把 front matter 的标题渲染成 h1
+  noFootnotes: false, // 去掉正文角标和文末「参考与注释」整块
 };
 
 for (let i = 0; i < argv.length; i++) {
@@ -61,6 +62,7 @@ for (let i = 0; i < argv.length; i++) {
   else if (a === '--text-color') opts.text = argv[++i];
   else if (a === '--font-size') opts.fontSize = Number(argv[++i]);
   else if (a === '--with-title') opts.withTitle = true;
+  else if (a === '--no-footnotes') opts.noFootnotes = true;
   else if (a === '-h' || a === '--help') {
     console.log(fs.readFileSync(new URL('./README.md', import.meta.url), 'utf8'));
     process.exit(0);
@@ -178,6 +180,39 @@ function mathSection(item) {
   return `<section style="${css.mathBlock}">${renderMath(item.tex, true)}</section>`;
 }
 
+// ---------------------------------------------------------------- 去脚注
+
+// 去掉正文里的 [^n] 角标和文末的 [^n]: 定义块。
+// 代码块和行内代码先挖走，避免误伤里面长得像脚注的写法。
+function stripFootnotes(src) {
+  const stash = [];
+  const protectedSrc = src.replace(
+    /```[\s\S]*?```|~~~[\s\S]*?~~~|`[^`\n]+`/g,
+    (m) => {
+      stash.push(m);
+      return `\u0000FN${stash.length - 1}\u0000`;
+    }
+  );
+
+  // 定义块：以 [^label]: 开头，含后续缩进的续行
+  const kept = [];
+  const lines = protectedSrc.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    if (/^\[\^[^\]\s]+\]:/.test(lines[i])) {
+      while (i + 1 < lines.length && /^[ \t]+\S/.test(lines[i + 1])) i++;
+      continue;
+    }
+    kept.push(lines[i]);
+  }
+
+  return kept
+    .join('\n')
+    .replace(/\[\^[^\]\s]+\][ \t]?/g, '') // 正文角标
+    .replace(/\n{3,}/g, '\n\n') // 定义块删掉后留下的空行
+    .replace(/\u0000FN(\d+)\u0000/g, (_, i) => stash[Number(i)])
+    .trimEnd();
+}
+
 // ---------------------------------------------------------------- markdown-it
 
 const md = new MarkdownIt({ html: true, breaks: false, linkify: false, typographer: false });
@@ -284,6 +319,8 @@ function convert(file) {
       // 题图：保留但套上居中样式，src 是站内相对路径时提醒一下
       m.replace(/<img/, `<img style="${css.img}"`)
     );
+
+  if (opts.noFootnotes) src = stripFootnotes(src);
 
   src = stashMath(src);
   let html = md.render(src);
