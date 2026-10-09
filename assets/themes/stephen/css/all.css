@@ -89,9 +89,8 @@
     display: none;
 }
 
-/* 点击目录跳转后，标题不会贴着固定导航栏 */
-.post-full h2,
-.post-full h3 {
+/* 锚点跳转（目录、脚注及其回跳）后，目标不会被固定导航栏挡住 */
+.post-full [id] {
     scroll-margin-top: 80px;
 }
 
